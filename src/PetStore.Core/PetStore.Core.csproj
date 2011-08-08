@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF79E5EE-F489-4239-B935-DA2C06848BFA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PetStore.Core</RootNamespace>
+    <AssemblyName>PetStore.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DomainException.cs" />
+    <Compile Include="Extension\StringExtension.cs" />
+    <Compile Include="Helper\Check.cs" />
+    <Compile Include="Helper\DataValidator.cs" />
+    <Compile Include="Infrastructure\Caching\Cache.cs" />
+    <Compile Include="Infrastructure\Caching\ICache.cs" />
+    <Compile Include="Infrastructure\Configuration\IConfigurationSettings.cs" />
+    <Compile Include="Infrastructure\Configuration\Implementation\ConfigurationSettingsImplementation.cs" />
+    <Compile Include="Infrastructure\Crypt\Cryptography.cs" />
+    <Compile Include="Infrastructure\Crypt\ICryptography.cs" />
+    <Compile Include="Infrastructure\Crypt\Implementation\CryptographyImplementation.cs" />
+    <Compile Include="Infrastructure\InversionOfControl\IDependencyResolver.cs" />
+    <Compile Include="Infrastructure\InversionOfControl\IoC.cs" />
+    <Compile Include="Infrastructure\Logging\ILogger.cs" />
+    <Compile Include="Infrastructure\Logging\Logger.cs" />
+    <Compile Include="Infrastructure\Mail\EmailSender.cs" />
+    <Compile Include="Infrastructure\Mail\EmailSendException.cs" />
+    <Compile Include="Infrastructure\Mail\IEmailSender.cs" />
+    <Compile Include="Infrastructure\Mail\Implementation\EmailSenderImplementation.cs" />
+    <Compile Include="Infrastructure\UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="Infrastructure\UnitOfWork\UnitOfWorkManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PetStore.Resources\PetStore.Resources.csproj">
+      <Project>{F829D345-1AC5-4640-BBAC-6FB3BF76CA39}</Project>
+      <Name>PetStore.Resources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
