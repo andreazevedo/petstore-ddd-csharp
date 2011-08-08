@@ -61,11 +61,83 @@ namespace PetStore.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to An error occurred while adding the object \&quot;{0}\&quot; to the repository..
+        /// </summary>
+        public static string AddPersistenceExceptionCustomMessage {
+            get {
+                return ResourceManager.GetString("AddPersistenceExceptionCustomMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred while adding the object to the repository..
+        /// </summary>
+        public static string AddPersistenceExceptionDefaultMessage {
+            get {
+                return ResourceManager.GetString("AddPersistenceExceptionDefaultMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Domain error..
         /// </summary>
         public static string DomainExceptionDefaultMessage {
             get {
                 return ResourceManager.GetString("DomainExceptionDefaultMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error ocurred while retrieving the object of id \&quot;{0}\&quot; and type \&quot;{1}\&quot; from the repository..
+        /// </summary>
+        public static string FindPersistenceExceptionCustomMessage {
+            get {
+                return ResourceManager.GetString("FindPersistenceExceptionCustomMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred while retrieving the object from the repository..
+        /// </summary>
+        public static string FindPersistenceExceptionDefaultMessage {
+            get {
+                return ResourceManager.GetString("FindPersistenceExceptionDefaultMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred while persisting the object..
+        /// </summary>
+        public static string PersistenceExceptionDefaultMessage {
+            get {
+                return ResourceManager.GetString("PersistenceExceptionDefaultMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred while removing the object \&quot;{0}\&quot; from the repository..
+        /// </summary>
+        public static string RemovePersistenceExceptionCustomMessage {
+            get {
+                return ResourceManager.GetString("RemovePersistenceExceptionCustomMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred while removing the object from the repository..
+        /// </summary>
+        public static string RemovePersistenceExceptionDefaultMessage {
+            get {
+                return ResourceManager.GetString("RemovePersistenceExceptionDefaultMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Validation error..
+        /// </summary>
+        public static string ValidationExceptionDefaultMessage {
+            get {
+                return ResourceManager.GetString("ValidationExceptionDefaultMessage", resourceCulture);
             }
         }
     }

@@ -63,6 +63,11 @@
     <Compile Include="Infrastructure\UnitOfWork\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\UnitOfWork\UnitOfWorkManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AddPersistenceException.cs" />
+    <Compile Include="Repository\FindPersistenceException.cs" />
+    <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="Repository\PersistenceException.cs" />
+    <Compile Include="Repository\RemovePersistenceException.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PetStore.Resources\PetStore.Resources.csproj">

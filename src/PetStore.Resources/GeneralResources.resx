@@ -117,8 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddPersistenceExceptionCustomMessage" xml:space="preserve">
+    <value>An error occurred while adding the object \"{0}\" to the repository.</value>
+    <comment>An error occurred while adding the object \"{0}\" to the repository.</comment>
+  </data>
+  <data name="AddPersistenceExceptionDefaultMessage" xml:space="preserve">
+    <value>An error occurred while adding the object to the repository.</value>
+    <comment>An error occurred while adding the object to the repository.</comment>
+  </data>
   <data name="DomainExceptionDefaultMessage" xml:space="preserve">
     <value>Domain error.</value>
     <comment>Domain error.</comment>
+  </data>
+  <data name="FindPersistenceExceptionCustomMessage" xml:space="preserve">
+    <value>An error ocurred while retrieving the object of id \"{0}\" and type \"{1}\" from the repository.</value>
+    <comment>An error ocurred while retrieving the object of id \"{0}\" and type \"{1}\" from the repository.</comment>
+  </data>
+  <data name="FindPersistenceExceptionDefaultMessage" xml:space="preserve">
+    <value>An error occurred while retrieving the object from the repository.</value>
+    <comment>An error ocurred while retrieving the object from the repository.</comment>
+  </data>
+  <data name="PersistenceExceptionDefaultMessage" xml:space="preserve">
+    <value>An error occurred while persisting the object.</value>
+    <comment>An error ocurred while persisting the object.</comment>
+  </data>
+  <data name="RemovePersistenceExceptionCustomMessage" xml:space="preserve">
+    <value>An error occurred while removing the object \"{0}\" from the repository.</value>
+    <comment>An error ocurrend while removing the object \"{0}\" from the repository.</comment>
+  </data>
+  <data name="RemovePersistenceExceptionDefaultMessage" xml:space="preserve">
+    <value>An error occurred while removing the object from the repository.</value>
+    <comment>An error occurred while removing the object from the repository.</comment>
+  </data>
+  <data name="ValidationExceptionDefaultMessage" xml:space="preserve">
+    <value>Validation error.</value>
+    <comment>Validation error.</comment>
   </data>
 </root>
