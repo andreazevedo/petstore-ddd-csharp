@@ -14,7 +14,7 @@ namespace PetStore.Core.Test.Helper
         public class ArgumentTest
         {
             [Test]
-            public void IsNotNullOrEmptyShouldReturnCorrectResult()
+            public void IsNotNullOrEmpty_ShouldReturnCorrectResult()
             {
                 string str = "Uma string";
 
@@ -23,7 +23,7 @@ namespace PetStore.Core.Test.Helper
 
             [Test]
             [ExpectedException(typeof(ArgumentException))]
-            public void IsNotNullOrEmptyShouldThrowException()
+            public void IsNotNullOrEmpty_ShouldThrowException()
             {
                 string str = String.Empty;
 
@@ -32,7 +32,7 @@ namespace PetStore.Core.Test.Helper
 
             [Test]
             [ExpectedException(typeof(ArgumentException))]
-            public void IsNotNullOrEmptyShouldThrowException2()
+            public void IsNotNullOrEmpty_ShouldThrowException2()
             {
                 string str = null;
 
@@ -40,7 +40,7 @@ namespace PetStore.Core.Test.Helper
             }
 
             [Test]
-            public void IsNotNullShouldReturnCorrectResult()
+            public void IsNotNull_ShouldReturnCorrectResult()
             {
                 object obj = new object();
 
@@ -49,7 +49,7 @@ namespace PetStore.Core.Test.Helper
 
             [Test]
             [ExpectedException(typeof(ArgumentException))]
-            public void IsNotNullShouldThrowException()
+            public void IsNotNull_ShouldThrowException()
             {
                 object obj = null;
 
@@ -57,7 +57,7 @@ namespace PetStore.Core.Test.Helper
             }
 
             [Test]
-            public void IsInRangeShouldReturnCorrectResult()
+            public void IsInRange_ShouldReturnCorrectResult()
             {
                 const int min = 0;
                 const int max = 100;
@@ -68,7 +68,7 @@ namespace PetStore.Core.Test.Helper
             }
 
             [Test]
-            public void IsInRangeShouldReturnCorrectResult2()
+            public void IsInRange_ShouldReturnCorrectResult2()
             {
                 const int min = 0;
                 const int max = 100;
@@ -79,7 +79,7 @@ namespace PetStore.Core.Test.Helper
             }
 
             [Test]
-            public void IsInRangeShouldReturnCorrectResult3()
+            public void IsInRange_ShouldReturnCorrectResult3()
             {
                 const int min = 0;
                 const int max = 100;
@@ -91,7 +91,7 @@ namespace PetStore.Core.Test.Helper
 
             [Test]
             [ExpectedException(typeof(ArgumentOutOfRangeException))]
-            public void IsInRangeShouldThrowException()
+            public void IsInRange_ShouldThrowException()
             {
                 const int min = 0;
                 const int max = 100;
@@ -103,7 +103,7 @@ namespace PetStore.Core.Test.Helper
 
             [Test]
             [ExpectedException(typeof(ArgumentOutOfRangeException))]
-            public void IsInRangeShouldThrowException2()
+            public void IsInRange_ShouldThrowException2()
             {
                 const int min = 0;
                 const int max = 100;
@@ -114,7 +114,7 @@ namespace PetStore.Core.Test.Helper
             }
 
             [Test]
-            public void IsNotInPastShouldReturnCorrectResult()
+            public void IsNotInPast_ShouldReturnCorrectResult()
             {
                 DateTime dateTime = DateTime.Now.AddMinutes(1);
 
@@ -123,7 +123,7 @@ namespace PetStore.Core.Test.Helper
 
             [Test]
             [ExpectedException(typeof(ArgumentOutOfRangeException))]
-            public void IsNotInPastShouldThrowException()
+            public void IsNotInPast_ShouldThrowException()
             {
                 DateTime dateTime = DateTime.Now.AddSeconds(-1);
 
@@ -131,7 +131,7 @@ namespace PetStore.Core.Test.Helper
             }
 
             [Test]
-            public void IsNotNegativeOrZeroShouldReturnCorrectResult()
+            public void IsNotNegativeOrZero_ShouldReturnCorrectResult()
             {
                 TimeSpan timeSpan = TimeSpan.FromMilliseconds(1);
 
@@ -140,7 +140,7 @@ namespace PetStore.Core.Test.Helper
 
             [Test]
             [ExpectedException(typeof(ArgumentOutOfRangeException))]
-            public void IsNotNegativeOrZeroShouldThrowException()
+            public void IsNotNegativeOrZero_ShouldThrowException()
             {
                 TimeSpan timeSpan = TimeSpan.FromMilliseconds(0);
 
@@ -149,7 +149,7 @@ namespace PetStore.Core.Test.Helper
 
             [Test]
             [ExpectedException(typeof(ArgumentOutOfRangeException))]
-            public void IsNotNegativeOrZeroShouldThrowException2()
+            public void IsNotNegativeOrZero_ShouldThrowException2()
             {
                 TimeSpan timeSpan = TimeSpan.FromMilliseconds(-1);
 
