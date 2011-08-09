@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Helper\CheckTest.cs" />
     <Compile Include="Helper\DataValidatorTest.cs" />
+    <Compile Include="Infrastructure\Crypt\Implementation\CryptographyImplementationTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -56,6 +57,7 @@
       <Name>PetStore.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
