@@ -11,7 +11,7 @@ namespace PetStore.Core.Test.Infrastructure.Crypt.Implementation
     public class CryptographyImplementationTest
     {
         [Test]
-        public void EncryptAndDecryptShouldReturnCorrectResult()
+        public void EncryptAndDecrypt_ShouldReturnCorrectResult()
         {
             const string value = "Téstê açentuação 123?!.";
 
@@ -25,7 +25,7 @@ namespace PetStore.Core.Test.Infrastructure.Crypt.Implementation
         }
 
         [Test]
-        public void EncryptAndDecryptNumberShouldReturnCorrectResult()
+        public void EncryptAndDecryptNumber_ShouldReturnCorrectResult()
         {
             const string value = "1";
 
@@ -39,7 +39,7 @@ namespace PetStore.Core.Test.Infrastructure.Crypt.Implementation
         }
 
         [Test]
-        public void ComputeHashShouldReturnCorrectValue()
+        public void ComputeHash_ShouldReturnCorrectValue()
         {
             const string value1 = "123456";
             const string value2 = "123457";

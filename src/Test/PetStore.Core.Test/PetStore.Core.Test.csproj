@@ -49,12 +49,19 @@
     <Compile Include="Helper\CheckTest.cs" />
     <Compile Include="Helper\DataValidatorTest.cs" />
     <Compile Include="Infrastructure\Crypt\Implementation\CryptographyImplementationTest.cs" />
+    <Compile Include="Infrastructure\InversionOfControl\IoCTest.cs" />
+    <Compile Include="Infrastructure\Logging\LoggerTest.cs" />
+    <Compile Include="Infrastructure\UnitOfWork\UnitOfWorkManagerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\PetStore.Core\PetStore.Core.csproj">
       <Project>{FF79E5EE-F489-4239-B935-DA2C06848BFA}</Project>
       <Name>PetStore.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PetStore.TestBase\PetStore.TestBase.csproj">
+      <Project>{BE801B36-49C9-4770-952C-76259F81F5FF}</Project>
+      <Name>PetStore.TestBase</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
