@@ -45,10 +45,17 @@
     <Compile Include="DomainObjects\DomainObjectsFactory.cs" />
     <Compile Include="DomainObjects\IValidatable.cs" />
     <Compile Include="DomainObjects\IValidator.cs" />
+    <Compile Include="DomainObjects\Log\DomainError.cs" />
+    <Compile Include="DomainObjects\Log\Error.cs" />
+    <Compile Include="DomainObjects\Log\GenericError.cs" />
+    <Compile Include="DomainObjects\Log\Validation\ErrorValidationException.cs" />
+    <Compile Include="DomainObjects\Log\Validation\ErrorValidator.cs" />
     <Compile Include="DomainObjects\ValidationException.cs" />
     <Compile Include="Extension\StringExtension.cs" />
     <Compile Include="Helper\Check.cs" />
     <Compile Include="Helper\DataValidator.cs" />
+    <Compile Include="Helper\ExceptionManager.cs" />
+    <Compile Include="Helper\PagedResult.cs" />
     <Compile Include="Infrastructure\Caching\Cache.cs" />
     <Compile Include="Infrastructure\Caching\ICache.cs" />
     <Compile Include="Infrastructure\Configuration\IConfigurationSettings.cs" />
@@ -70,8 +77,10 @@
     <Compile Include="Repository\AddPersistenceException.cs" />
     <Compile Include="Repository\FindPersistenceException.cs" />
     <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="Repository\Log\IErrorRepository.cs" />
     <Compile Include="Repository\PersistenceException.cs" />
     <Compile Include="Repository\RemovePersistenceException.cs" />
+    <Compile Include="Services\Log\ErrorService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PetStore.Resources\PetStore.Resources.csproj">
