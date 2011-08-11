@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStore.TestBase", "Test\P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStore.Infrastructure.NHibernate", "PetStore.Infrastructure.NHibernate\PetStore.Infrastructure.NHibernate.csproj", "{F5595B81-C00D-452E-8C4E-67380224EE4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStore.Infrastructure.Foundation", "PetStore.Infrastructure.Foundation\PetStore.Infrastructure.Foundation.csproj", "{F71C9500-5F71-4316-BB06-1B62A30B12CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F5595B81-C00D-452E-8C4E-67380224EE4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5595B81-C00D-452E-8C4E-67380224EE4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5595B81-C00D-452E-8C4E-67380224EE4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71C9500-5F71-4316-BB06-1B62A30B12CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71C9500-5F71-4316-BB06-1B62A30B12CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71C9500-5F71-4316-BB06-1B62A30B12CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71C9500-5F71-4316-BB06-1B62A30B12CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
