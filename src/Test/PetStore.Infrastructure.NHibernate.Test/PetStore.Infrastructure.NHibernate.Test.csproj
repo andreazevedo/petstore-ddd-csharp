@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>50de65f7-d8e0-4ad2-a2d3-4fe5f09e03e9</ProjectGuid>
+    <ProjectGuid>{D4AB6CC1-B67D-4457-8864-985A844CBCF8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PetStore.Infrastructure.NHibernate.Test</RootNamespace>
@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -31,17 +32,46 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\..\libs\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\..\libs\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\libs\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\..\..\libs\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.SysCache">
+      <HintPath>..\..\..\libs\NHibernate.Caches.SysCache.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\libs\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\libs\System.Data.SQLite.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Helper\InMemoryDatabaseSessionFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Log\ErrorRepositoryTest.cs" />
+    <Compile Include="Repository\RepositoryTestBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\PetStore.Core\PetStore.Core.csproj">
+      <Project>{FF79E5EE-F489-4239-B935-DA2C06848BFA}</Project>
+      <Name>PetStore.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PetStore.Infrastructure.NHibernate\PetStore.Infrastructure.NHibernate.csproj">
+      <Project>{F5595B81-C00D-452E-8C4E-67380224EE4E}</Project>
+      <Name>PetStore.Infrastructure.NHibernate</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

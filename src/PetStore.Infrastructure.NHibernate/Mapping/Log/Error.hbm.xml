@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
-<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="OSMobile.Core.DomainObjects.Log" assembly="OSMobile.Core">
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="PetStore.Core.DomainObjects.Log" assembly="PetStore.Core">
   <class name="Error" table="`Error`">
     <cache usage="nonstrict-read-write" region="LongTerm" />
 
