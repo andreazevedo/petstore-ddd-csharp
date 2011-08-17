@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DomainException.cs" />
     <Compile Include="DomainObjects\DomainObjectsFactory.cs" />
+    <Compile Include="DomainObjects\Foundation\Category.cs" />
     <Compile Include="DomainObjects\IValidatable.cs" />
     <Compile Include="DomainObjects\IValidator.cs" />
     <Compile Include="DomainObjects\Log\DomainError.cs" />
