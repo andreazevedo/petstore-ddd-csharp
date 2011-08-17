@@ -43,7 +43,10 @@
   <ItemGroup>
     <Compile Include="DomainException.cs" />
     <Compile Include="DomainObjects\DomainObjectsFactory.cs" />
+    <Compile Include="DomainObjects\Foundation\Address.cs" />
     <Compile Include="DomainObjects\Foundation\Category.cs" />
+    <Compile Include="DomainObjects\Foundation\Country.cs" />
+    <Compile Include="DomainObjects\Foundation\Product.cs" />
     <Compile Include="DomainObjects\IValidatable.cs" />
     <Compile Include="DomainObjects\IValidator.cs" />
     <Compile Include="DomainObjects\Log\DomainError.cs" />
@@ -89,7 +92,9 @@
       <Name>PetStore.Resources</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="DomainObjects\Security\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
