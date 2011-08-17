@@ -1,24 +1,24 @@
 ﻿namespace PetStore.Core.DomainObjects.Foundation
 {
     /// <summary>
-    /// Entidade que representa uma categoria de produtos
+    /// Category entity
     /// </summary>
     public class Category
     {
         #region Public Properties
 
         /// <summary>
-        /// Id da categoria
+        /// Category ID
         /// </summary>
         public int Id { get; set; }
 
         /// <summary>
-        /// Nome da Categoria
+        /// Category name
         /// </summary>
         public string Name { get; set; }
 
         /// <summary>
-        /// Descrição da categoria
+        /// Category description
         /// </summary>
         public string Description { get; set; }
 
