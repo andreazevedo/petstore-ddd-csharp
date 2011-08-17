@@ -7,7 +7,6 @@ using PetStore.Core.Helper;
 
 namespace PetStore.Core.Test.Helper
 {
-    [TestFixture]
     public class CheckTest
     {
         [TestFixture]
