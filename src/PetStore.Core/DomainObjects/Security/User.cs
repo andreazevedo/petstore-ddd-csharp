@@ -1,4 +1,7 @@
-﻿namespace PetStore.Core.DomainObjects.Security
+﻿using System.Collections.Generic;
+using PetStore.Core.DomainObjects.Foundation;
+
+namespace PetStore.Core.DomainObjects.Security
 {
     /// <summary>
     /// User entity
@@ -31,6 +34,11 @@
         /// Indicates whether the user is not registered yet
         /// </summary>
         public virtual bool IsAnonymous { get; set; }
+
+        /// <summary>
+        /// User addresses
+        /// </summary>
+        public virtual IList<Address> Addresses { get; set; }
 
         
         // TODO - Analyze LastActivityDate and LastUpdatedDate on Microsoft PetShop
