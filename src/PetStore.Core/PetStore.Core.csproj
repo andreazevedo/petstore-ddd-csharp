@@ -44,6 +44,9 @@
     <Compile Include="DomainException.cs" />
     <Compile Include="DomainObjects\DomainObjectsFactory.cs" />
     <Compile Include="DomainObjects\Foundation\Address.cs" />
+    <Compile Include="DomainObjects\Foundation\OrderItem.cs" />
+    <Compile Include="DomainObjects\Payment\CreditCard.cs" />
+    <Compile Include="DomainObjects\Foundation\Order.cs" />
     <Compile Include="DomainObjects\Foundation\Category.cs" />
     <Compile Include="DomainObjects\Foundation\Country.cs" />
     <Compile Include="DomainObjects\Foundation\Product.cs" />
@@ -54,6 +57,7 @@
     <Compile Include="DomainObjects\Log\GenericError.cs" />
     <Compile Include="DomainObjects\Log\Validation\ErrorValidationException.cs" />
     <Compile Include="DomainObjects\Log\Validation\ErrorValidator.cs" />
+    <Compile Include="DomainObjects\Payment\CreditCardAssociation.cs" />
     <Compile Include="DomainObjects\Security\User.cs" />
     <Compile Include="DomainObjects\ValidationException.cs" />
     <Compile Include="Extension\StringExtension.cs" />
