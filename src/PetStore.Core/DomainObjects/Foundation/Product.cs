@@ -32,6 +32,11 @@
         /// </summary>
         public virtual string ImagePath { get; set; }
 
+        /// <summary>
+        /// Quantity in stock
+        /// </summary>
+        public virtual int Quantity { get; set; }
+
         #endregion
     }
 }
