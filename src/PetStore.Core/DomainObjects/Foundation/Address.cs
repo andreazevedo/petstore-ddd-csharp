@@ -14,20 +14,15 @@
         public virtual int Id { get; set; }
 
         /// <summary>
-        /// Address street name
+        /// First address line
         /// </summary>
-        public virtual string Street { get; set; }
+        public virtual string FirstLine { get; set; }
 
         /// <summary>
-        /// Address number
+        /// Second address line
         /// </summary>
-        public virtual string Number { get; set; }
+        public virtual string SecondLine { get; set; }
 
-        /// <summary>
-        /// Address district/neighborhood
-        /// </summary>
-        public virtual string District { get; set; }
-        
         /// <summary>
         /// Address city/town/locality
         /// </summary>
