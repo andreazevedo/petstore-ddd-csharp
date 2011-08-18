@@ -44,6 +44,7 @@
     <Compile Include="DomainException.cs" />
     <Compile Include="DomainObjects\DomainObjectsFactory.cs" />
     <Compile Include="DomainObjects\Foundation\Address.cs" />
+    <Compile Include="DomainObjects\Foundation\CartItem.cs" />
     <Compile Include="DomainObjects\Foundation\OrderItem.cs" />
     <Compile Include="DomainObjects\Payment\CreditCard.cs" />
     <Compile Include="DomainObjects\Foundation\Order.cs" />
