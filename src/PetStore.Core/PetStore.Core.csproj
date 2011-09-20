@@ -46,7 +46,9 @@
     <Compile Include="DomainObjects\Foundation\Address.cs" />
     <Compile Include="DomainObjects\Foundation\CartItem.cs" />
     <Compile Include="DomainObjects\Foundation\OrderItem.cs" />
+    <Compile Include="DomainObjects\Foundation\PhoneNumber.cs" />
     <Compile Include="DomainObjects\Foundation\PhoneNumberType.cs" />
+    <Compile Include="DomainObjects\Foundation\Supplier.cs" />
     <Compile Include="DomainObjects\Payment\CreditCard.cs" />
     <Compile Include="DomainObjects\Foundation\Order.cs" />
     <Compile Include="DomainObjects\Foundation\Category.cs" />
