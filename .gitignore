@@ -17,3 +17,6 @@ _ReSharper.*
 *.resharper
 Ankh.NoLoad
 Local.testsettings
+
+*.pidb
+*.userprefs
